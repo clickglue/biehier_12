@@ -14,13 +14,13 @@ export default function (ComposedComponent) {
   class Authentication extends Component {
     componentWillMount() {
       if (!this.props.user) {
-        Actions.auth();
+        Actions.loginTab();
       }
     }
 
     componentWillUpdate(nextProps) {
       if (!nextProps.user) {
-        Actions.auth();
+        Actions.loginTab();
       }
     }
 

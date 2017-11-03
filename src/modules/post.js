@@ -30,7 +30,7 @@ export const createPost = ({ title, description }) => {
   return (dispatch) => {
     dispatch({ type: POST_CREATE_REQUEST });
 
-    firebase.database().ref(`/users/${currentUser.uid}/post`)
+    firebase.database().ref(`/users/${currentUser.uid}/drinkers`)
       .push({ title, description })
       .then(() => {
         dispatch({ type: POST_CREATE_SUCCESS });

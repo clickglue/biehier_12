@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import { Provider } from 'react-redux';
 import firebase from 'firebase';
 import Router from './Router';
-import store from './configureStore';
+import store from './Store';
 import { SIGN_IN_SUCCESS } from './modules/auth';
 import { Spinner } from './components/common';
 import firebaseConfig from './firebase.json';
